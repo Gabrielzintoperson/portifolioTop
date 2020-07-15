@@ -226,7 +226,7 @@ a{
 .card{
     position: relative;
     transform-style:preserve-3d;
-    transition: transform 1,7s;
+    transition: transform 1.7s;
 }
 
 .flip-card:hover .card{
