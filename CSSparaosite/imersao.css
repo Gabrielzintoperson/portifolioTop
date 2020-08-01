@@ -139,6 +139,7 @@ a{
 .contato h2,
 .portfolio h2{
     color: whitesmoke;
+    margin-top: 2em;
     margin-bottom: 2em;
     font-size: 2em;
     padding: 4px;
