@@ -79,7 +79,7 @@ header{
 .menu a{
     display: block;
     padding: 10px 20px;
-    transition:background-color 1s, color 1s;
+    transition:background-color, color 500ms;
 }
 .menu a:active, 
 .menu a:hover{
