@@ -6,7 +6,7 @@
 }
 /*fim do reset do site*/
 body{
-    background-image: black;
+    background: black;
     font-family:'Arial Narrow';
     background-size: 100vw 100vh;
     font-size: 12px;
