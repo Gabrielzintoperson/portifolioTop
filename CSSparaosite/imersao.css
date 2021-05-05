@@ -2,7 +2,8 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;    
+    box-sizing: border-box;
+    z-index: 1;    
 }
 /*fim do reset do site*/
 body{
@@ -27,44 +28,47 @@ header{
 }
 
 .site-subtitle{
-    transform: scale(5) translateY(10vh);   
-    opacity: 100;
-    animation:ease 30s animaçaoSubtitulo forwards;
+    transform: scale(2) translateY(80vh);
+    opacity: 1;
+    animation: ease 30s animaçaoSubtitulo forwards;
 }
 
 @keyframes animaçaoSubtitulo{
-    70%{
-        transform:translateY(8);
+    0%{
+        transform: scale(3) translateY(40vh);
     }
-    90%{
-        transform:translateY(16);
-        opacity:50;   
+    80%{
+        transform: scale(0.1) translateY(-40vh);
+        opacity: 0;
     }
     100%{
-        transform: scale(0.01) translateY(-20vh);   
+        transform: scale(0.1) translateY(0vh);
         opacity: 0;
     }
 }
 
 .site-title{
-    transform: scale(10) translateY(40vh);   
+    transform: scale(5) translateY(40vh);
     opacity: 100;
-    animation: 42s ease 5s animaçaoTitulo forwards;
+    animation: 70s ease 1s animaçaoTitulo forwards;
 }
 
 @keyframes animaçaoTitulo{
+    50%{
+        transform: scale(1) translateY(10vh);
+    }
     100%{
         transform: scale(1) translateY(10vh);
     }
 }
-
 
 .menu{
     background-color: white;
     position: fixed;
     width: 100vw;
     top: 0;
-    z-index: 1;
+    z-index: 2;
+    border-radius: 0 0 2rem 2rem;
 }
 
 .menu ul{
@@ -79,15 +83,14 @@ header{
 .menu a{
     display: block;
     padding: 10px 20px;
-    transition:background-color, color 500ms;
+    transition:background-color 1s, color 1s;
 }
-.menu a:active, 
-.menu a:hover{
+
+.menu a:active, .menu a:hover{
     background-color: teal;
     color:white;
-
 }
- 
+
 a{
     text-decoration: none;
     color: teal;
@@ -164,7 +167,7 @@ a{
 .sobre .img-sobre {
     clip-path: polygon(69% 0, 100% 31%, 100% 100%, 31% 100%, 0 69%, 0 0);
     float: right;
-    margin-left:2em;
+    margin-left: 2em;
 }
 
 .sobre p{
