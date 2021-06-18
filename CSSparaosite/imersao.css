@@ -78,12 +78,12 @@ header{
 
 .menu li{
     list-style: none;
-    border-radius: 50%;
 }
 
 .menu a{
     display: block;
     padding: 10px 20px;
+    border-radius: 0 0 15% 15%;
     transition:background-color 1s, color 1s;
 }
 
