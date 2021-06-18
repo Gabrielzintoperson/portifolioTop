@@ -30,10 +30,10 @@ header{
 .site-subtitle{
     transform: scale(2) translateY(80vh);
     opacity: 1;
-    animation: ease 30s animaçaoSubtitulo forwards;
+    animation: ease 30s animacaoSubtitulo forwards;
 }
 
-@keyframes animaçaoSubtitulo{
+@keyframes animacaoSubtitulo{
     0%{
         transform: scale(3) translateY(40vh);
     }
@@ -50,10 +50,10 @@ header{
 .site-title{
     transform: scale(5) translateY(40vh);
     opacity: 100;
-    animation: 70s ease 1s animaçaoTitulo forwards;
+    animation: 70s ease 1s animacaoTitulo forwards;
 }
 
-@keyframes animaçaoTitulo{
+@keyframes animacaoTitulo{
     50%{
         transform: scale(1) translateY(10vh);
     }
@@ -63,7 +63,7 @@ header{
 }
 
 .menu{
-    background-color: white;
+    background-color: black;
     position: fixed;
     width: 100vw;
     top: 0;
@@ -87,13 +87,13 @@ header{
 }
 
 .menu a:active, .menu a:hover{
-    background-color: teal;
-    color:white;
+    background-color: yellow;
+    color:black;
 }
 
 a{
     text-decoration: none;
-    color: teal;
+    color: yellow;
 }
 
 .site-title, 
