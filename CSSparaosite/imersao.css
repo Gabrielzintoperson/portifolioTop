@@ -78,6 +78,7 @@ header{
 
 .menu li{
     list-style: none;
+    border-radius: 50%;
 }
 
 .menu a{
