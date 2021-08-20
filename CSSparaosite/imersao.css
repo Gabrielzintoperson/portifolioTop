@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 /*inicio do reset do site*/
 *{
     margin: 0;
