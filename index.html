@@ -34,9 +34,8 @@
         <img class="img-sobre" src="https://1.bp.blogspot.com/-Z4HOUfdRQtQ/VX-XMl_NV7I/AAAAAAAAAS8/lFM6o0jI9rM/s1600/Peixe-Baiacu-4.jpg" alt="Gabriel Jacomassi Dalcuche">
       </figure>      
     </div>
-   <p>Olá, tenho 13 anos e amo programar descobri que a linguagem que vou querer<br> a profundar e ter como hoobie e com certeza CSS 3 achei muito divertido fazer este curso <br>e quero continuar a praticar e mostrar aos meus amigos que eu fiz algo na quarentena.</p>
+   <p id='texto'>Olá, tenho 15 anos e amo programar descobri que a linguagem que vou querer<br> a profundar e ter como hoobie e com certeza CSS 3 achei muito divertido fazer este curso <br>e quero continuar a praticar e mostrar aos meus amigos que eu fiz algo na quarentena.</p>
    <p>Eu sei que faltou as devidas pontuações, ok?</p>
-   <p>Obrigado a Alura por este curso maravilhoso que foi a <a href="https://www.alura.com.br/imersao-css"> Imersão-CSS </a> 🤩😛🤩😛🤩</p>
     </div>
   </section>
   <section class="portfolio container" id="portfolio">
@@ -91,5 +90,19 @@
       </div>
     </div>
   </section>
+  <script>
+		var texto = document.querySelector('#texto');
+		var fullAno = new Date();
+		var ano = fullAno.getFullYear();
+		var mes = fullAno.getMonth();
+		var idade = ano - 2006;
+		var idade2 = ano - 2007
+		console.log(mes, ano, texto);
+		if (mes < 8){
+			texto.innerHTML = 'Olá, tenho ' + idade2 + ' anos e amo programar descobri que a linguagem que vou querer<br> a profundar e ter como emprego é com certeza CSS 3 achei muito interressante <br>e quero continuar a praticar e mostrar às pessoas a minha habilidade.';
+		}else{
+			texto.innerHTML = 'Olá, tenho ' + idade + ' anos e amo programar descobri que a linguagem que vou querer<br> a profundar e ter como emprego é com certeza CSS 3 achei muito interressante <br>e quero continuar a praticar e mostrar às pessoas a minha habilidade.';
+		}
+	</script>
 </body>
 </html>
